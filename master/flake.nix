@@ -11,7 +11,6 @@
   inputs.src-nimem-master.ref   = "refs/heads/master";
   inputs.src-nimem-master.owner = "Sann0";
   inputs.src-nimem-master.repo  = "Nimem";
-  inputs.src-nimem-master.dir   = "";
   inputs.src-nimem-master.type  = "github";
   
   inputs."winim".owner = "nim-nix-pkgs";
