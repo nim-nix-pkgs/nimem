@@ -21,6 +21,35 @@
         "type": "github"
       }
     },
+    "nimem-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "regex": "regex",
+        "src-nimem-master": "src-nimem-master",
+        "winim": "winim"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656283862,
+        "narHash": "sha256-aqm2fn95Vxrk+lBOTELuAilU+Z7WBDX+F9DdB2Ud1+Q=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nimem",
+        "rev": "62850321dd4816eed55d12843e960fc38a6f8106",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nimem",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 0,
@@ -36,9 +65,11 @@
     "regex": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimem-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nimem-master",
           "nixpkgs"
         ],
         "src-regex-v0_19_0": "src-regex-v0_19_0",
@@ -46,11 +77,11 @@
       },
       "locked": {
         "dir": "v0_19_0",
-        "lastModified": 1656302513,
-        "narHash": "sha256-WnXkrCABmJAoPuLRaoBFHF64y9B5Ld9+gBHXxny83IY=",
+        "lastModified": 1653703543,
+        "narHash": "sha256-YJDAN/ECpLb0s88ZLIpPSYkqMOj0q8WU0I/jLQgtO6g=",
         "owner": "nim-nix-pkgs",
         "repo": "regex",
-        "rev": "4bf78482dc0fb932b1b97a0c117babad35253878",
+        "rev": "914638b6fc8575b0e72e6cb7cd5be1d2e6615b0e",
         "type": "github"
       },
       "original": {
@@ -64,10 +95,8 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs",
-        "regex": "regex",
-        "src-nimem-master": "src-nimem-master",
-        "winim": "winim"
+        "nimem-master": "nimem-master",
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-nimem-master": {
@@ -141,10 +170,12 @@
     "unicodedb": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimem-master",
           "regex",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nimem-master",
           "regex",
           "nixpkgs"
         ],
@@ -170,9 +201,11 @@
     "winim": {
       "inputs": {
         "flakeNimbleLib": [
+          "nimem-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nimem-master",
           "nixpkgs"
         ],
         "src-winim-3_8_1": "src-winim-3_8_1"
